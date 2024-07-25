@@ -19,6 +19,8 @@ model Product {
   description String?
   price       Float
   storageInfo StorageInfo?
+  storeId Int
+  store Store @relation(fields: [storeId], references: [id])
 }
 
 model StorageInfo {
@@ -26,4 +28,10 @@ model StorageInfo {
   stock Int
   productId Int @unique
   product Product @relation(fields: [productId], references: [id])
+}
+
+model Store {
+  id         Int      @id @default(autoincrement())
+  name       String   @unique
+  products  Product[]
 }
