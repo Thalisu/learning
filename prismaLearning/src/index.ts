@@ -36,7 +36,9 @@ const productServices = new ProductServices();
 
   /*   const response = await productServices.updateMany(6, { price: 4000 }); */
 
-  const response = await productServices.deleteOne(1);
+  /* const response = await productServices.deleteOne(1); */
+
+  const response = await storeServices.deleteMany("Carina Store");
 
   console.log(response);
 })();
