@@ -12,7 +12,10 @@ export class StoreServices {
   }
 
   async findOne(storeId: number) {
-    return await prisma.store.findFirst({ where: { id: storeId } });
+    return await prisma.store.findFirst({
+      where: { id: storeId },
+      include: { products: true },
+    });
   }
 
   async findMany(search?: string) {

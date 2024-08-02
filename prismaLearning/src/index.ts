@@ -24,7 +24,9 @@ const productServices = new ProductServices();
 
   /*   const response = await storeServices.findOne(6); */
 
-  const response = await storeServices.findMany("Store");
+  /*   const response = await storeServices.findMany("Store"); */
+
+  const response = await storeServices.findOne(6);
 
   console.log(response);
 })();
