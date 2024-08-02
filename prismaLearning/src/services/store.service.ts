@@ -14,4 +14,10 @@ export class StoreServices {
   async findOne(storeId: number) {
     return await prisma.store.findFirst({ where: { id: storeId } });
   }
+
+  async findMany(search?: string) {
+    return await prisma.store.findMany({
+      where: { name: { contains: search, mode: "insensitive" } },
+    });
+  }
 }

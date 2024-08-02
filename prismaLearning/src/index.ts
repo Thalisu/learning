@@ -22,7 +22,9 @@ const productServices = new ProductServices();
     storeId: 6,
   }); */
 
-  const response = await storeServices.findOne(6);
+  /*   const response = await storeServices.findOne(6); */
+
+  const response = await storeServices.findMany("Store");
 
   console.log(response);
 })();
