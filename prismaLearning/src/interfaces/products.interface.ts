@@ -20,4 +20,14 @@ export interface IProduct {
     categories: ICategory[]; */
 }
 
+export interface IStore {
+  id: number;
+  name: string;
+  products?: IProduct[];
+}
+
+export type TUpdateStore = Partial<Pick<IStore, "name">>;
+
 export type TCreateProduct = Omit<IProduct, "id">;
+
+export type TUpdateProduct = Partial<Omit<IProduct, "id" | "storeId">>;

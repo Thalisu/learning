@@ -28,7 +28,11 @@ const productServices = new ProductServices();
 
   /*   const response = await storeServices.findOne(6); */
 
-  const response = await storeServices.findMany(undefined, undefined, 1);
+  /*   const response = await storeServices.findMany(undefined, undefined, 1); */
+
+  const response = await storeServices.updateOne(6, {
+    name: "Uneve Store outros papo",
+  });
 
   console.log(response);
 })();

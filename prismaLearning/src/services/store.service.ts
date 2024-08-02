@@ -1,4 +1,5 @@
 import prisma from "../database/prisma";
+import { TUpdateStore } from "../interfaces/products.interface";
 
 export class StoreServices {
   async create(storeName: string) {
@@ -24,5 +25,9 @@ export class StoreServices {
       take,
       skip,
     });
+  }
+
+  async updateOne(storeId: number, data: TUpdateStore) {
+    return await prisma.store.update({ where: { id: storeId }, data });
   }
 }
