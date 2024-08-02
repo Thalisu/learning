@@ -18,9 +18,11 @@ export class StoreServices {
     });
   }
 
-  async findMany(search?: string) {
+  async findMany(search?: string, take = 10, skip = 0) {
     return await prisma.store.findMany({
       where: { name: { contains: search, mode: "insensitive" } },
+      take,
+      skip,
     });
   }
 }
