@@ -15,12 +15,14 @@ const productServices = new ProductServices();
     "Uneve Store",
   ]); */
 
-  const response = await productServices.create({
+  /*   const response = await productServices.create({
     name: "Computador",
     price: 2500,
     description: "Computador bonito",
     storeId: 6,
-  });
+  }); */
+
+  const response = await storeServices.findOne(6);
 
   console.log(response);
 })();

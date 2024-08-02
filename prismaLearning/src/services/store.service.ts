@@ -10,4 +10,8 @@ export class StoreServices {
 
     return await prisma.store.createMany({ data: stores });
   }
+
+  async findOne(storeId: number) {
+    return await prisma.store.findFirst({ where: { id: storeId } });
+  }
 }
