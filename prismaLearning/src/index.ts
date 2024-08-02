@@ -34,7 +34,9 @@ const productServices = new ProductServices();
     name: "Uneve Store outros papo",
   });*/
 
-  const response = await productServices.updateMany(6, { price: 4000 });
+  /*   const response = await productServices.updateMany(6, { price: 4000 }); */
+
+  const response = await productServices.deleteOne(1);
 
   console.log(response);
 })();

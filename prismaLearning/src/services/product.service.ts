@@ -15,4 +15,8 @@ export class ProductServices {
       data,
     });
   }
+
+  async deleteOne(id: number) {
+    return await prisma.product.delete({ where: { id } });
+  }
 }
