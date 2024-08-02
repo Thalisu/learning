@@ -30,9 +30,11 @@ const productServices = new ProductServices();
 
   /*   const response = await storeServices.findMany(undefined, undefined, 1); */
 
-  const response = await storeServices.updateOne(6, {
+  /*   const response = await storeServices.updateOne(6, {
     name: "Uneve Store outros papo",
-  });
+  });*/
+
+  const response = await productServices.updateMany(6, { price: 4000 });
 
   console.log(response);
 })();
