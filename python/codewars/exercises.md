@@ -44,3 +44,13 @@ def remove(s):
 def reverse_words(s):
     return " ".join(s.split()[::-1])
 ```
+
+
+## String repeat
+
+### Solution
+
+```
+def repeat_str(repeat, string):
+    return string * repeat
+```
