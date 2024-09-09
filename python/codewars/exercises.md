@@ -18,3 +18,12 @@ def sum_str(a, b):
     return str(int(a or "0") + int(b or "0"))
 ```
 
+## Returning Strings
+
+### Solution
+
+```
+def greet(name):
+    return f'Hello, {name} how are you doing today?'
+```
+
