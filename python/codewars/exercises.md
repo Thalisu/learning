@@ -27,3 +27,11 @@ def greet(name):
     return f'Hello, {name} how are you doing today?'
 ```
 
+## Remove an exclamation mark from the end of string
+
+### Solution
+
+```
+def remove(s):
+    return s[:-1] if s and s[-1] == "!" else s
+```
