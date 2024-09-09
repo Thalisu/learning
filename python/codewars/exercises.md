@@ -91,3 +91,13 @@ def starts_with(st, prefix):
 def quotable(name, quote):
     return f'{name} said: "{quote}"'
 ```
+
+## Substituting Variables Into Strings: Padded Numbers
+
+
+### Solution
+
+```
+def solution(value):
+    return f'Value is {"0" * - (len(str(value)) - 5)}{value}'
+```
