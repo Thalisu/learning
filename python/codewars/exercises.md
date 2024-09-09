@@ -65,3 +65,12 @@ def repeat_str(repeat, string):
 def string_merge(string1, string2, letter):
     return f'{string1.split(letter, 1)[0]}{letter}{string2.split(letter, 1)[1]}'
 ```
+
+## String ends with?
+
+### Solution
+
+```
+def solution(text, ending):
+    return text[-len(ending):] == ending
+```
