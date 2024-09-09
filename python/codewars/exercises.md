@@ -54,3 +54,14 @@ def reverse_words(s):
 def repeat_str(repeat, string):
     return string * repeat
 ```
+
+# 7 Kyu
+
+## String Merge!
+
+### Solution
+
+```
+def string_merge(string1, string2, letter):
+    return f'{string1.split(letter, 1)[0]}{letter}{string2.split(letter, 1)[1]}'
+```
