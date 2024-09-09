@@ -74,3 +74,13 @@ def string_merge(string1, string2, letter):
 def solution(text, ending):
     return text[-len(ending):] == ending
 ```
+
+## Strings starts with?
+
+### Solution
+
+```
+def starts_with(st, prefix): 
+    return st.startswith(prefix)
+```
+
