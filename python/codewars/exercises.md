@@ -45,7 +45,6 @@ def reverse_words(s):
     return " ".join(s.split()[::-1])
 ```
 
-
 ## String repeat
 
 ### Solution
@@ -80,7 +79,15 @@ def solution(text, ending):
 ### Solution
 
 ```
-def starts_with(st, prefix): 
+def starts_with(st, prefix):
     return st.startswith(prefix)
 ```
 
+## String Drills: Quotable
+
+### Solution
+
+```
+def quotable(name, quote):
+    return f'{name} said: "{quote}"'
+```
