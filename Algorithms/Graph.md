@@ -16,3 +16,7 @@
     Is commonly stated in terms of V and E where V stands for vertices and E stands for edges. So O(V * E) means that we will check every vertex, and on every vertex we check every edge
 
 #### The grand problem is Memory
+
+## dijkstra
+
+    Algorithm that finds the shortest path between nodes in a weighted graph, optimizing distances for efficient navigation.
